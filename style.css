@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: hsl(47, 88%, 63%);
+	font-family: "Figtree", sans-serif;
+
+
+}
+p{
+	font-size: 15px;
+	font-weight: 500;
+}
+.card-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.card{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	row-gap: 24px;
+	max-width: 384px;
+	background-color: #fff;
+	border: 1px solid #000;
+	padding: 24px;
+	border-radius: 20px;
+	box-shadow: 8px 8px 0 0 #000;
+}
+.card .card-img{}
+.card .card-img img{}
+.card .card-body{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	row-gap: 12px;
+}
+.card .card-body .text{
+	font-size: 16px;
+	line-height: 150%;
+	color: hsl(0, 0%, 42%);
+}
+.card .card-body .title{
+	font-size: 24px;
+	line-height: 150%;
+	color: hsl(0, 0%, 7%);
+	font-weight: 800;
+	transition: color 0.3s ease;
+}
+.card .card-body .title:hover{
+	color: hsl(47, 88%, 63%);
+}
+.card .card-body .category-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: fit-content;
+	background-color: hsl(47, 88%, 63%);
+	border-radius: 4px;
+	padding: 4px 12px;
+}
+.card .card-body .category-container .category{
+	font-size: 14px;
+	line-height: 150%;
+	font-weight: 900;
+	color: hsl(0, 0%, 7%);
+}
+.card .card-body .date{
+	font-size: 14px;
+	line-height: 150%;
+	color: hsl(0, 0%, 7%);
+
+}
+.card .card-footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	column-gap: 12px;
+}
+.card .card-footer img{
+	width: 32px;
+	height: 32px;
+}
