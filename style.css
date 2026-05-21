@@ -26,7 +26,8 @@ p{
 	justify-content: center;
 	align-items: flex-start;
 	row-gap: 24px;
-	max-width: 384px;
+	width: clamp(327px, 85vw, 384px);
+	/*max-width: 384px;*/
 	background-color: #fff;
 	border: 1px solid #000;
 	padding: 24px;
@@ -34,7 +35,9 @@ p{
 	box-shadow: 8px 8px 0 0 #000;
 }
 .card .card-img{}
-.card .card-img img{}
+.card .card-img img{
+	width: 100%;
+}
 .card .card-body{
 	display: flex;
 	flex-direction: column;
@@ -42,12 +45,12 @@ p{
 	row-gap: 12px;
 }
 .card .card-body .text{
-	font-size: 16px;
+	font-size: clamp(14x, 5vw, 16px);
 	line-height: 150%;
 	color: hsl(0, 0%, 42%);
 }
 .card .card-body .title{
-	font-size: 24px;
+	font-size: clamp(20px, 5vw, 24px);
 	line-height: 150%;
 	color: hsl(0, 0%, 7%);
 	font-weight: 800;
@@ -66,13 +69,13 @@ p{
 	padding: 4px 12px;
 }
 .card .card-body .category-container .category{
-	font-size: 14px;
+	font-size: clamp(12px, 5vw, 14px);
 	line-height: 150%;
 	font-weight: 900;
 	color: hsl(0, 0%, 7%);
 }
 .card .card-body .date{
-	font-size: 14px;
+	font-size: clamp(12px, 5vw, 14px);
 	line-height: 150%;
 	color: hsl(0, 0%, 7%);
 
